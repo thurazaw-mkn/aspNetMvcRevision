@@ -1,0 +1,38 @@
+﻿@model FutureLightCenter.Models.Home.ListNewsModel;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Image</th>
+            <th scope="col">Body</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+
+        @* @for (int i = 0; i < Model.newsModelList.Count; i++) *@
+        @* { *@
+        @*     var item = Model.newsModelList[i]; *@
+        @*     <tr> *@
+        @*         <th scope="row">@item.Id</th> *@
+        @*         <td>@item.Title</td> *@
+        @*         <td>@item.Image</td> *@
+        @*         <td>@item.Body</td> *@
+        @*     </tr> *@
+        @* } *@
+        
+
+        </tbody>
+    </table>
+    
+    <img style="width: 30px; height: 60px;" alt="-" src="@Model.newsModelList[1].Image"/>
+
+</div>
